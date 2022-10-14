@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,
+  maximum-scale=5" />
+
+  <link rel="icon" href="devchallenges.png" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet">
+
+  <title>DevChallenges | My Team Page</title>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --fs-700: 36px;
+      --fs-600: 18px;
+      --fs-400: 14px;
+      --fs-300: 12px;
+      --fs-200: 10px;
+
+      --clr-primary: hsl(0, 0%, 0%);
+      --clr-secondary: hsla(0, 0%, 66%, 1);
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      font-size: var(--fs-400);
+      padding: 19px;
+      color: var(--clr-primary);
+    }
+
+    h1 {
+      font-size: var(--fs-700);
+      margin-block: 52px 38px;
+    }
+
+    h1,
+    .member__role {
+      font-family: 'PT Serif', serif;
+    }
+
+    .heading {
+      font-size: var(--fs-600);
+      margin-bottom: 10px;
+    }
+
+    .heading,
+    .member__name {
+      font-weight: 600;
+    }
+
+    .heading,
+    .member__role {
+      text-transform: uppercase;
+    }
+
+    .team {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+      margin-block: 66px 130px;
+    }
+
+    .team__member {
+      position: relative;
+    }
+
+    .team__member:nth-child(2n) {
+      transform: translateY(20%);
+    }
+
+    img {
+      width: 90%;
+    }
+
+    .member__role {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: var(--fs-200);
+      writing-mode: vertical-rl;
+      height: 100%;
+    }
+
+    .create-by {
+      text-align: center;
+      color: var(--clr-secondary);
+    }
+
+    .create-by a {
+      font-weight: bold;
+      color: inherit;
+    }
+
+    @media (min-width: 1000px) {
+      body {
+        font-size: var(--fs-600);
+        max-width: 932px;
+        padding: 0;
+        padding-bottom: 24px;
+        margin-inline: auto;
+      }
+
+      header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: flex-start;
+        margin-block: 110px 96px;
+      }
+
+      h1 {
+        margin: 0;
+      }
+
+      .team {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 67px;
+        margin-bottom: 230px;
+      }
+
+      .team__member:nth-child(2n) {
+        transform: translateY(0);
+      }
+
+      .team__member:nth-child(3n-1) {
+        transform: translateY(25%);
+      }
+
+      .member__role {
+        font-size: var(--fs-300);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>The creative crew</h1>
+
+    <section>
+      <div class="heading">Who we are</div>
+
+      <p>
+        We are team of creatively diverse. driven.
+        innovative individuals working in various locations from the world.
+      </p>
+    </section>
+  </header>
+
+  <main class="team">
+    <div class="team__member">
+      <img class="member__photo" src="./photo1.png" alt="">
+      <div class="member__name">Bill Mahoney</div>
+      <div class="member__role">Product owner</div>
+    </div>
+
+    <div class="team__member">
+      <img class="member__photo" src="./photo2.png" alt="">
+      <div class="member__name">Saba Cabrera</div>
+      <div class="member__role">Art director</div>
+    </div>
+
+    <div class="team__member">
+      <img class="member__photo" src="./photo3.png" alt="">
+      <div class="member__name">Shae Le</div>
+      <div class="member__role">Tech Lead</div>
+    </div>
+
+    <div class="team__member">
+      <img class="member__photo" src="./photo4.png" alt="">
+      <div class="member__name">Skylah Lu</div>
+      <div class="member__role">UX Designer</div>
+    </div>
+
+    <div class="team__member">
+      <img class="member__photo" src="./photo5.png" alt="">
+      <div class="member__name">Griff Richards</div>
+      <div class="member__role">Developer</div>
+    </div>
+
+    <div class="team__member">
+      <img class="member__photo" src="./photo6.png" alt="">
+      <div class="member__name">Stan John</div>
+      <div class="member__role">Developer</div>
+    </div>
+  </main>
+
+  <div class="create-by">created by <a href="https://github.com/shakthi2003gh" title="GitHub Link">Shakthi</a> -
+    devChallenges.io</div>
+</body>
+
+</html>
