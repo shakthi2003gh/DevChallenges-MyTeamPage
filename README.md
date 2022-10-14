@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://wondrous-torte-977829.netlify.app">
+    <a href="https://merry-puppy-63eb69.netlify.app">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/shakthi2003gh/DevChallenges-Gallery.git">
+    <a href="https://github.com/shakthi2003gh/DevChallenges-MyTeamPage.git">
       Solution
     </a>
     <span> | </span>
